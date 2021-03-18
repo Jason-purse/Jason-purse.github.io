@@ -1,11 +1,18 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "dede8009-002c-4815-8524-76a271e8659c"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "material": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "less"
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -24,6 +31,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -87,6 +95,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],
             "scripts": []
